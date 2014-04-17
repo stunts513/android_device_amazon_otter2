@@ -63,3 +63,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.vid=1949 \
     sys.usb.pid=000a
 
+#Gecko related things we need (for now just device specific modules)
+PRODUCT_COPY_FILES += \
+    $(DEVICE_FOLDER)/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+    $(DEVICE_FOLDER)/modules/cfg80211.ko:system/lib/modules/cfg80211.ko \
+    $(DEVICE_FOLDER)/modules/compat.ko:system/lib/modules/compat.ko \
+    $(DEVICE_FOLDER)/modules/mac80211.ko:system/lib/modules/mac80211.ko \
+    $(DEVICE_FOLDER)/modules/pvrsrvkm_sgx540_120.ko:system/lib/modules/pvrsrvkm_sgx540_120.ko \
+    $(DEVICE_FOLDER)/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    $(DEVICE_FOLDER)/modules/wl12xx.ko:system/lib/modules/wl12xx.ko \
+    $(DEVICE_FOLDER)/modules/wl12xx_sdio.ko:system/lib/modules/wl12xx_sdio.ko \
+    $(DEVICE_FOLDER)/modules/wl12xx_spi.ko:system/lib/modules/wl12xx_spi.ko
+
